@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project | Ari Lugassy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Cormorant+Infant:wght@400;500;600;700&family=Rock+Salt&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=5" />
+</head>
+<body class="project-page">
+  <header class="hero" id="home">
+    <div class="container hero-content">
+      <h1 class="hero-heading">ARI LUGASSY</h1>
+      <p class="hero-subtitle">Illustrator, Designer and All Around Creative</p>
+      <div class="nav-labels" aria-label="Portfolio sections">
+        <a href="index.html#works" class="works-label is-active">My Works</a>
+        <a href="about.html" class="about-label">About Me</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-shell">
+    <div class="project-window">
+      <div class="gallery-panel">
+        <header class="project-info">
+          <h1 id="projectTitle">Project Title</h1>
+          <p id="projectDescription">Project description</p>
+          <p class="project-subtext" id="projectSubtext" hidden></p>
+          <p class="project-team-credit" id="projectTeamCredit" hidden></p>
+        </header>
+
+        <div class="project-image-list" id="projectImageList" aria-live="polite"></div>
+      </div>
+
+      <section class="project-recommendations" id="projectRecommendations" aria-labelledby="recommendationTitle" hidden>
+        <h2 id="recommendationTitle">More projects</h2>
+        <div class="recommendation-grid" id="recommendationGrid"></div>
+      </section>
+    </div>
+  </main>
+
+  <dialog class="project-lightbox" id="projectLightbox" aria-label="Expanded project image">
+    <button class="project-lightbox-close" id="projectLightboxClose" type="button" aria-label="Close enlarged image">&times;</button>
+    <img id="projectLightboxImage" alt="" />
+  </dialog>
+
+  <script src="script.js?v=4"></script>
+</body>
+</html>
