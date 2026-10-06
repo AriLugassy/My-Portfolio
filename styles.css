@@ -389,6 +389,7 @@ p {
   margin-top: 10rem;
   padding: 1.75rem 0;
   border-top: 1px solid rgba(255, 255, 255, 0.04);
+  text-align: center;
 }
 
 .project-page {
@@ -1503,4 +1504,32 @@ p {
   line-height: 1.8;
   color: var(--muted);
   font-weight: 400;
+  margin: 0 0 1.5rem;
+}
+
+.about-text:last-child {
+  margin-bottom: 0;
+}
+
+.about-cta {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  line-height: 1.6;
+  color: var(--muted);
+  margin-top: 3.5rem;
+  border-top: 1px solid var(--border);
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.about-cta a {
+  color: var(--accent-2);
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.about-cta a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
 }
